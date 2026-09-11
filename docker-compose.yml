@@ -2,21 +2,26 @@ services:
 
   db:
     image: postgres:16
-    container_name: airproof-db
+    container_name: odoo-formation-db
+
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: odoo
       POSTGRES_PASSWORD: odoo
+
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - odoo_formation_postgres:/var/lib/postgresql/data
+
     restart: always
 
 
   odoo:
     image: odoo:19
-    container_name: airproof-odoo
+    container_name: odoo-formation-web
+
     depends_on:
       - db
+
     ports:
       - "8069:8069"
 
@@ -28,13 +33,13 @@ services:
     volumes:
       - ./addons:/mnt/extra-addons
       - ./config:/etc/odoo
-      - odoo_data:/var/lib/odoo
+      - odoo_formation_data:/var/lib/odoo
 
     restart: always
 
 
 volumes:
 
-  postgres_data:
+  odoo_formation_postgres:
 
-  odoo_data:
+  odoo_formation_data:
