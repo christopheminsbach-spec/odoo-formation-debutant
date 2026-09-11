@@ -5,12 +5,18 @@ services:
     container_name: odoo-formation-db
 
     environment:
-      POSTGRES_DB: postgres
       POSTGRES_USER: odoo
       POSTGRES_PASSWORD: odoo
+      POSTGRES_DB: odoo_formation_debutant
 
     volumes:
       - odoo_formation_postgres:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
     restart: always
 
@@ -20,7 +26,8 @@ services:
     container_name: odoo-formation-web
 
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
     ports:
       - "8069:8069"

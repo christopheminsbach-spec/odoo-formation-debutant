@@ -1,4 +1,22 @@
 @font-face {
+
     font-family: "Lato";
-    src: url('/airproof_theme/static/src/fonts/Lato-Regular.woff');
+
+    src: url('/airproof_theme/static/src/fonts/Lato-Regular.woff2')
+         format('woff2');
+
+    font-weight: 400;
+
+}
+
+
+@font-face {
+
+    font-family: "Lato";
+
+    src: url('/airproof_theme/static/src/fonts/Lato-Bold.woff2')
+         format('woff2');
+
+    font-weight: 700;
+
 }

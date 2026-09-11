@@ -1,0 +1,7 @@
+<record id="website.default_website" model="website">
+
+    <field name="name">
+        Airproof
+    </field>
+
+</record>
