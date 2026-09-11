@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Odoo
+*.pyc
+*.pyo
+.odoo/
+filestore/
+
+# PostgreSQL
+postgres_data/
+*.sql
+
+# Docker volumes
+odoo_data/
+
+# IDE
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+# Environment
+.env
