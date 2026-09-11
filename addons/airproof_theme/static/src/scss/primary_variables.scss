@@ -1,0 +1,12 @@
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+    (
+        'airproof': (
+            'o-color-1': #000000,
+            'o-color-2': #BBE1FA,
+            'o-color-3': #CEF8A1,
+            'o-color-4': #FFFFFF,
+            'o-color-5': #0B8EE6,
+        ),
+    )
+);
