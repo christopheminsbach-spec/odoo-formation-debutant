@@ -18,21 +18,32 @@
 
             <div id="wrap">
 
-    <section class="airproof-hero">
+                <section class="airproof-hero">
 
-    <div class="container">
+                <div class="airproof-overlay"></div>
 
-        <h1>
-            AIRPROOF
-        </h1>
+                <div class="container">
+                  <div class="airproof-content">
 
-        <p>
-            L'air intelligent de demain
-        </p>
+                   <img class="airproof-logo"/>
 
-    </div>
+                   <h1>
+                    La qualité de l’air intelligent
+                   </h1>
 
-     </section>
+                   <p>
+                     Solutions professionnelles de ventilation,
+                     climatisation et supervision IoT.
+                   </p>
+
+                   <a class="btn btn-primary">
+                      Découvrir nos solutions
+                   </a>
+
+                  </div>
+                  </div>
+
+                </section>
 
             </div>
 
