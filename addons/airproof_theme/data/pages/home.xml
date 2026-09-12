@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<odoo noupdate="1">
+<odoo>
 
-<record id="page_home" model="website.page">
+    <record id="airproof_homepage" model="website.page">
+
+    <field name="name">Airproof Homepage</field>
+
+    <field name="url">/airproof_homepage</field>
+
+    <field name="key">airproof_homepage</field>
+
+    <field name="is_published">True</field>
+
+    <field name="arch" type="xml">
+
+        <t t-call="website.layout">
+
+            <div id="wrap">
+
+    <section class="airproof-hero">
+
+    <div class="container">
+
+        <h1>
+            AIRPROOF
+        </h1>
+
+        <p>
+            L'air intelligent de demain
+        </p>
+
+    </div>
+
+     </section>
+
+            </div>
+
+        </t>
+
+    </field>
 
 </record>
 
-<field name="is_published" eval="True"/>
-
-<field name="url">
-/
-</field>
-
-<field name="arch" type="xml"></field>
-    <xpath expr="//div[@id='wrap']" position="inside">
-        <t t-call="airproof_theme.homepage"/>
-    </xpath>
-
-    <div id="wrap">
-
-    <p>Hello</p>
-
-    </div>
 
 </odoo>

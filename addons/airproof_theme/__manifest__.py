@@ -1,50 +1,31 @@
 {
     "name": "Airproof Theme",
 
-    "description": """
-        Custom Website Theme inspired by Airproof
-    """,
-
-    "category": "Theme/Website",
-
     "version": "19.0.1.0.0",
 
-    "author": "Christophe Minsbach",
+    "author": "Angus Studio Grafix",
 
-    "license": "LGPL-3",
+    "category": "Website",
 
-
+    "summary": "Airproof custom website theme",
     "depends": [
-
-        "website",
-
+        "website"
     ],
-
-
     "data": [
-    "data/website.xml",
-    "data/images.xml",
-    "data/presets.xml",
-    "data/pages/home.xml",
-],
-
-
+        "data/website.xml",
+        "data/menu.xml",
+        "data/presets.xml",
+        "data/images.xml",
+        "data/pages/home.xml",
+        "views/assets.xml",
+    ],
     "assets": {
-
-    "web._assets_primary_variables": [
-        "airproof_theme/static/src/scss/primary_variables.scss",
-    ],
-
-    "web._assets_bootstrap": [
-        "airproof_theme/static/src/scss/bootstrap_overridden.scss",
-    ],
-
     "web.assets_frontend": [
-        "airproof_theme/static/src/scss/**/*.scss",
+        "airproof_theme/static/src/scss/airproof.scss",
+        "airproof_theme/static/src/scss/components/hero.scss",
     ],
 },
-
-
-    "application": True,
-
+    "installable": True,
+    "application": False,
+    "license": "LGPL-3",
 }

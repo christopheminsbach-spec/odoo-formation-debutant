@@ -1,7 +1,7 @@
-<record id="website.default_website" model="website">
+<odoo>
 
-    <field name="name">
-        Airproof
-    </field>
+    <record id="website_airproof" model="website">
+        <field name="name">Airproof</field>
+    </record>
 
-</record>
+</odoo>
